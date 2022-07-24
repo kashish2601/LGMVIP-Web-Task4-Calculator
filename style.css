@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.25s;
+  user-select: none;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #3494e6, #ec6ead);
+}
+h1 {
+  bottom: 5pc;
+  position: relative;
+  font-family: "Sigmar One";
+}
+.box {
+  height: 560px;
+  width: 350px;
+  padding: 20px;
+  background-color: #babecc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.display {
+  width: 100%;
+}
+.display input {
+  text-align: right;
+  caret-color: transparent;
+  font-size: 30px;
+  height: 120px;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #babecc;
+  box-shadow: inset -5px -5px 15px #fff9, inset 5px 5px 15px #0003;
+}
+
+.btns {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 28px;
+}
+.btns input {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #babecc;
+  box-shadow: -5px -5px 20px #fff9, 5px 5px 10px #0003;
+}
+
+.btn {
+  background: linear-gradient(145deg, #0002, #fff9);
+}
+.btn:active {
+  box-shadow: none;
+}
+.sbtn,
+#eqbtn,
+#clear {
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(145deg, #3494e6, #ec6ead);
+}
+#clear {
+  font-size: 20px;
+}
+.sbtn:active,
+#eqbtn:active,
+#clear:active {
+  box-shadow: none;
+  background: linear-gradient(145deg, #ec6ead, #3494e6);
+}
